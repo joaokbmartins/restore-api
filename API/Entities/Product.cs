@@ -19,5 +19,17 @@ namespace API.Entities
 
     public int QuantityInStock { get; set; }
 
+    public override String ToString()
+    {
+      return "Id:" + Id + "\n " +
+             "Name:" + Name + "\n " +
+             "Description:" + Description + "\n " +
+             "Price:" + Price + "\n " +
+             "PictureUrl:" + PictureUrl + "\n " +
+             "Type:" + Type + "\n " +
+             "Brand:" + Brand + "\n " +
+             "QuantityInStock:" + QuantityInStock + "\n ";
+    }
+
   }
 }
