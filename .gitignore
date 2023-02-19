@@ -1,4 +1,4 @@
-/API/.db
+/API/*.db
+/API/*.db-*
 /API/bin
 /API/obj
-/API/.db-*
