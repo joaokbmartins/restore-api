@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var NewPolicy = "_newPolicy";
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -12,6 +14,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<StoreContext>(options =>
 {
   options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy(
+    name: NewPolicy,
+    policy =>
+    {
+      policy.WithOrigins("http://localhost:3000");
+    }
+  );
 });
 
 var app = builder.Build();
@@ -24,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(NewPolicy);
 
 app.UseAuthorization();
 
