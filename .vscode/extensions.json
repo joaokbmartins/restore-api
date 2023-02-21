@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "ms-dotnettools.csharp",
+    "kreativ-software.csharpextensions",
+    "pkief.material-icon-theme",
+    "patcx.vscode-nuget-gallery",
+    "alexcvzz.vscode-sqlite"
+  ]
+}
