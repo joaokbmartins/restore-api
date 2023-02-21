@@ -1,4 +1,4 @@
-DEVELOPMENT (appsettings.development.json):
+DEVELOPMENT (appsettings.Development.json --> CAPITAL "D"):
 {
   "Logging": {
     "LogLevel": {
