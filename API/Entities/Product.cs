@@ -11,7 +11,7 @@ namespace API.Entities
 
     public long Price { get; set; }
 
-    public string PictureUrl { get; set; }
+    public string ImagePath { get; set; }
 
     public string Type { get; set; }
 
@@ -25,7 +25,7 @@ namespace API.Entities
              "Name:" + Name + "\n " +
              "Description:" + Description + "\n " +
              "Price:" + Price + "\n " +
-             "PictureUrl:" + PictureUrl + "\n " +
+             "ImagePath:" + ImagePath + "\n " +
              "Type:" + Type + "\n " +
              "Brand:" + Brand + "\n " +
              "QuantityInStock:" + QuantityInStock + "\n ";
