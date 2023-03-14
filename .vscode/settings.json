@@ -3,5 +3,10 @@
     "**/*.db-*": true,
     "**/bin": true,
     "**/obj": true
-  }
+  },
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "ms-dotnettools.csharp",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
 }
